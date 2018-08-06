@@ -2,8 +2,14 @@ body{
     background: #dddddd;
 }
 
-.w-50{
-    margin: 0 25%; 
+.nav-w{
+    margin: 0 auto; 
+    width: 960px;
+}
+
+.rounded{
+    margin: 0 auto;
+    width: 960px;
 }
 
 .titleBox{
@@ -14,9 +20,25 @@ body{
     color: white;   
 }
 
+.caption {
+    box-sizing: border-box;
+    position: relative;
+    bottom: 52px;
+    background: #4aaaa5;
+    width:95%;
+    height:40px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-family:'Georgia', Times, 'Times New Roman', serif;
+    font-size: 1.1em;
+    padding-top: 8px;
+}
+
 footer{
     background: #666666;
     border-top: 5px solid #4aaaa5;
+    bottom: 0px;
 }
 
 @media(max-width:768px){
