@@ -52,16 +52,26 @@ span.navbg:active { color: white; }
 .caption {
     box-sizing: border-box;
     position: relative;
-    bottom: 52px;
+    bottom: 60px;
     background: #4aaaa5;
     width:95%;
-    height:40px;
+    height:50px;
     text-align: center;
     color: white;
     z-index: 1;
     font-family:'Georgia', Times, 'Times New Roman', serif;
-    font-size: 1.1em;
-    padding-top: 8px;
+    font-size: 1.3em;
+    padding-top: 5px;
+    line-height: 1.1em;
+}
+
+.caption a{
+    color: white;
+}
+
+.github{
+    font-size: 0.7em;
+    
 }
 
 .thumbnail:hover .thumbnail-0,{
