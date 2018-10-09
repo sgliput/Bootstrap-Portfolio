@@ -1,15 +1,33 @@
 body{
-    background: #dddddd;
+    position: relative;
+    z-index: 0;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    background-image: url("../images/pattern.jpg")
+    background: -moz-linear-gradient(#5FC2E3, rgb(73, 34, 247), rgb(134, 175, 236));
+   background: -o-linear-gradient(#5FC2E3, rgb(73, 34, 247), rgb(134, 175, 236));
+   background: -webkit-linear-gradient(#5FC2E3, rgb(73, 34, 247), rgb(134, 175, 236));
+   background-size: 100% 100%;    
 }
 
-h1, h2, h4{
+body:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/oceanPattern.jpg"); 
+    background-size: 40% 100%;
+    width: 100%;
+    height: 100%;
+    opacity : 0.2;
+    z-index: -1;
+}
+
+h1, h2, h4, h5{
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
 h2{
-    color:#4aaaa5;
+    color:rgb(69, 121, 235);
 }
 
 h4{
@@ -28,7 +46,7 @@ span.navbg:hover {
     font-style: italic; 
     font-size: 1.1em;
     padding: 8px;
-    background-color: #4aaaa5;
+    background-color: rgb(69, 121, 235);
     border-radius: 5px;
 }
 span.navbg:active { color: white; }
@@ -40,9 +58,13 @@ span.navbg:active { color: white; }
 
 .titleBox{
     box-sizing: border-box;
-    background: #4aaaa5;
+    background: rgb(69, 121, 235);
     width:150px;
     height:70px;   
+}
+
+.fab{
+    font-size: 1.3em;
 }
 
 .img-fluid{
@@ -53,7 +75,7 @@ span.navbg:active { color: white; }
     box-sizing: border-box;
     position: relative;
     bottom: 60px;
-    background: #4aaaa5;
+    background: rgb(69, 121, 235);
     width:95%;
     height:50px;
     text-align: center;
@@ -71,17 +93,21 @@ span.navbg:active { color: white; }
 
 .github{
     font-size: 0.7em;
-    
 }
 
-.thumbnail:hover .thumbnail-0,{
-    outline: 5px solid #4aaaa5;
+.thumbnail:hover .img-fluid{
+    outline: 5px solid rgb(73, 34, 247);
     outline-offset: 1px;
   }
 
+.label{
+    text-decoration: underline;
+}
+
+
 footer{
     background: #666666;
-    border-top: 5px solid #4aaaa5;
+    border-top: 5px solid rgb(73, 34, 247);
     bottom: 0px;
     width: 100%;
 }
@@ -99,6 +125,12 @@ footer{
     .thumbnail{
         width:85%;
         margin: 0 auto;
+    }
+    .card-body p{
+        margin-bottom: 3rem;
+    }
+    .card-body p.last{
+        margin-bottom:1rem;
     }
 }
 

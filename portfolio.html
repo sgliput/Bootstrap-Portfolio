@@ -13,10 +13,11 @@
         crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Portfolio</title>
 </head>
-
+<div class="backImage"></div>
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom border-info p-0">
         <div class="nav-w">
@@ -46,6 +47,14 @@
                     <li class="nav-item">
                         <a class="nav-item nav-link" href="contact.html">
                             <span class="navbg">Contact</span>
+                            <span class="line">&nbsp;|</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="https://www.linkedin.com/in/samuel-liput-b04b49166/" data-toggle="tooltip" title="LinkedIn Profile" target="blank">
+                            <span class="navbg">
+                                <i class="fab fa-linkedin"></i>
+                            </span>
                         </a>
                     </li>
                 </ul>
@@ -89,9 +98,6 @@
                             </section>
                     </div>
                 </div>
-
-            </div>
-            <div class="row no-gutters">
                 <div class="col-md-4 col-sm-5">
                     <div class="thumbnail">
                         <img class="img-fluid" src="assets/images/trivialPurfruit.png" alt="Samuel Liput" width="95%" height="200px">
@@ -106,6 +112,10 @@
                             </section>
                     </div>
                 </div>
+
+            </div>
+            <div class="row no-gutters">
+                
                 <div class="col-md-4 col-sm-5">
                     <div class="thumbnail">
                         <img class="img-fluid" src="assets/images/gifproject.png" alt="Samuel Liput" width="95%" height="200px">
@@ -120,8 +130,6 @@
                             </section>
                     </div>
                 </div>
-            </div>
-            <div class="row no-gutters">
                 <div class="col-md-4 col-sm-5">
                     <div class="thumbnail">
                         <img class="img-fluid" src="assets/images/trainproject.png" alt="Samuel Liput" width="95%" height="200px">
@@ -136,6 +144,7 @@
                             </section>
                     </div>
                 </div>
+                           
                 <div class="col-md-4 col-sm-5">
                     <div class="thumbnail">
                         <img class="img-fluid" src="assets/images/medsearch.png" alt="Samuel Liput" width="95%" height="200px">
@@ -164,3 +173,9 @@
 </body>
 
 </html>
+
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip(); 
+    });
+    </script>
