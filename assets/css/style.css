@@ -73,6 +73,8 @@ span.navbg:active { color: white; }
 
 .img-fluid{
     height: 180px;
+    left: 7px;
+    position: relative;
 }
 
 .caption {
@@ -89,6 +91,7 @@ span.navbg:active { color: white; }
     font-size: 1.3em;
     padding-top: 5px;
     line-height: 1.1em;
+    left: 7px;
 }
 
 .caption a{
@@ -99,11 +102,30 @@ span.navbg:active { color: white; }
     font-size: 0.7em;
 }
 
+.dropdown{
+    display: none;
+}
+
+.dropdown p{
+    color: white;
+    text-align: center;
+}
+
+.thumbnail{
+    padding: 10px;
+    width: 300px;
+    
+}
+
+.thumbnail:hover{
+    border: 5px solid blue;
+}
+/*
 .thumbnail:hover .img-fluid{
     outline: 5px solid rgb(73, 34, 247);
     outline-offset: 1px;
   }
-
+*/
 .label{
     text-decoration: underline;
 }
